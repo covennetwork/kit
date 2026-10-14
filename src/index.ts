@@ -16,5 +16,22 @@ export type { KitEventName, KitEvents, SwapKind, SwapSide } from './core/events.
 export { resolveTheme, type ResolvedTheme, type Theme, type ThemeMode } from './core/theme.js'
 export { VIEWS, parseViewRequest, viewRequestToParams, type SwapViewParams, type ViewName, type ViewRequest } from './core/views.js'
 export { TokenDirectory, UNISWAP_TOKEN_LIST_URL, readBalances, type Balance, type TokenInfo } from './core/tokens.js'
-export { planSwap, quoteSwap, executeSwap, type SwapAsset, type SwapPlan, type SwapQuote, type Step } from './core/swap.js'
+export {
+  planSwap,
+  quoteSwap,
+  executeSwap,
+  finishDeposit,
+  pendingStore,
+  resumedSteps,
+  sideOf,
+  isUsdc,
+  type ExecuteContext,
+  type ExecuteResult,
+  type PendingTransfer,
+  type SwapAsset,
+  type SwapPlan,
+  type SwapQuote,
+  type Step,
+  type StepState,
+} from './core/swap.js'
 export { formatAmount, parseAmount, shortAddress } from './core/format.js'
